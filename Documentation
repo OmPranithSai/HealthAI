@@ -1,0 +1,119 @@
+🩺 HealthAI - IBM Granite-Powered Medical Assistant
+HealthAI is a smart, interactive medical assistant built with Gradio and powered by IBM Granite 3.3-2B Instruct via Hugging Face Transformers. It provides symptom analysis, natural remedies, medication guidance, and disease information in a friendly and accessible format. This AI system aims to offer initial insights into common health concerns—but never replaces professional medical advice.
+
+🚀 Features
+1.🔍 Symptom Analysis: Understand possible conditions from described symptoms
+
+2.🌿 Home Remedies: Get natural, evidence-based suggestions for common illnesses
+
+3.💊 Medication Guide: View conventional treatments with disclaimers
+
+4.💬 Disease Explanation: Understand complex medical conditions in simple language
+
+5.🧠 Powered by LLM: Uses IBM's Granite-3.3-2B-Instruct with 4-bit quantized loading for optimized performance
+
+🛠️ Tech Stack
+Tool/Library	         Purpose
+🤗 Transformers	       Load the pretrained IBM Granite LLM
+💽 BitsAndBytes       Enable 4-bit quantization for efficiency
+💡 Gradio	             Build and launch interactive web interface
+🔐 Huggingface Hub	   Authenticated model access
+🔣 SentencePiece	    Tokenization support for LLMs
+⚡ Accelerate	         Efficient model loading
+🧠 PyTorch	          Underlying deep learning framework
+
+📁 Project Structure
+bash
+Copy
+Edit
+├── HealthAI.ipynb / health_ai.py   # Main app code with Gradio UI
+├── README.md                       # This documentation
+├── requirements.txt                # Dependencies list
+⚙️ Setup Instructions
+1. Clone the Repository
+git clone https://github.com/your-username/HealthAI.git
+cd HealthAI
+
+2. Install Dependencies
+Ensure Python 3.8+ is installed.
+
+pip install -r requirements.txt
+If running in a Jupyter Notebook, you may use !pip install inline instead.
+
+3. Authenticate Hugging Face
+Before using the model, log in to your Hugging Face account:
+
+from huggingface_hub import notebook_login
+notebook_login()
+Paste your Hugging Face token when prompted.
+
+4. Run the App
+Run via terminal or notebook:
+python health_ai.py
+Or, from notebook:
+app.launch(share=True, debug=True)
+
+🧠 How It Works
+HealthAI uses prompt engineering with an instruction-tuned large language model (IBM Granite-3.3-2B-Instruct) to:
+
+1.Interpret symptom descriptions and suggest likely conditions
+
+2.Recommend safe home remedies based on natural medicine sources
+
+3.Describe treatment options with disclaimers
+
+4.Explain medical terms and illnesses in layman's terms
+
+All prompts are passed through a single generation pipeline using Hugging Face's generate() method.
+
+💡 Example Use Cases
+🔍 Symptom Analysis
+Input: "headache, nausea, sensitivity to light"
+Output:
+1.Migraine
+2.Tension Headache
+3.Dehydration
+
+🌿 Home Remedies
+Input: "common cold"
+Output:
+1.Ginger tea
+2.Steam inhalation
+3.Honey with warm water
+
+💊 Medication Guide
+Input: "high blood pressure"
+Output:
+1.Beta-blockers
+2.ACE inhibitors
+3.Calcium channel blockers
+
+💬 Disease Explanation
+Input: "asthma"
+Output:
+1.Asthma is a condition where airways narrow and swell...
+2.Symptoms include wheezing, coughing, shortness of breath...
+3.See a doctor if symptoms persist or worsen...
+
+⚠️ Medical Disclaimer
+This tool is NOT a replacement for professional diagnosis or treatment.
+Always consult a qualified physician for medical concerns.
+This application is intended for educational or initial informational purposes only.
+
+
+📝 License
+This project is open-sourced under the MIT License.
+You may modify, distribute, or use it with proper credit.
+
+🤝 Contributing
+Pull requests and suggestions are welcome! If you want to contribute:
+1.Fork the repository
+2.Create a new branch (git checkout -b feature-name)
+3.Commit your changes
+4.Push to the branch (git push origin feature-name)
+5.Open a pull request
+
+📬 Contact
+For questions or feedback:
+📧 ompranithsai7@gmail.com
+🔗 https://www.linkedin.com/in/om-pranith-sai-voleti-5170632b5/

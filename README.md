@@ -12,8 +12,7 @@ An AI-powered medical assistant with symptom analysis, treatment recommendations
 - 💬 **Disease Explorer**: Learn about medical conditions
 
 ## 🚀 Quick Start (Google Colab)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://github.com/OmPranithSai/HealthAI/tree/main)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/OmPranithSai/HealthAI)
 
 1. Click the Colab button above
 2. Run all cells
